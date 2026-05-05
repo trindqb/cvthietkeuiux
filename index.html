@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header chính, sticky và có backdrop blur -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#home" class="brand">Hồ Minh</a>
+      <button class="nav-toggle" aria-label="Mở menu điều hướng">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section: lời chào, tên, chức danh, CTA -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__content reveal">
+        <p class="hero__eyebrow">Xin chào, tôi là</p>
+        <h1 class="hero__title">Hồ Minh</h1>
+        <p class="hero__role">UI/UX Designer</p>
+        <p class="hero__description">
+          Thiết kế trải nghiệm web bán hàng, trường học và hệ thống LMS với phong cách tối giản, rõ ràng và chuyên nghiệp.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="button button--primary">Xem dự án</a>
+          <a href="#contact" class="button button--secondary">Liên hệ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section: ảnh đại diện + giới thiệu + kỹ năng -->
+    <section class="section" id="about">
+      <div class="section__inner">
+        <div class="about reveal">
+          <div class="about__media" aria-hidden="true">
+            <div class="avatar">HM</div>
+          </div>
+          <div class="about__details">
+            <span class="section__eyebrow">About</span>
+            <h2 class="section__title">Chuyên môn của tôi</h2>
+            <p class="section__text">
+              Tôi có 1 năm kinh nghiệm thiết kế UI/UX cho website bán hàng, nền tảng học tập và hệ thống quản lý học tập. Tôi tập trung vào cấu trúc nội dung rõ ràng, hành trình người dùng trực quan và giao diện hiện đại.
+            </p>
+            <div class="skill-list">
+              <span class="skill">Nghiên cứu người dùng</span>
+              <span class="skill">Thiết kế wireframe</span>
+              <span class="skill">Prototype</span>
+              <span class="skill">Thiết kế responsive</span>
+              <span class="skill">Tối ưu chuyển đổi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section: lưới card dự án -->
+    <section class="section section--gray" id="projects">
+      <div class="section__inner">
+        <div class="section-header reveal">
+          <span class="section__eyebrow">Projects</span>
+          <h2 class="section__title">Một số dự án tiêu biểu</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-card__media"></div>
+            <div class="project-card__body">
+              <span class="project-card__tag">E-commerce</span>
+              <h3 class="project-card__title">Web bán hàng thời trang</h3>
+              <p class="project-card__text">Thiết kế giao diện mua sắm trực quan, chuẩn hoá quy trình tìm kiếm và thanh toán cho người dùng trẻ.</p>
+              <a href="#contact" class="project-card__link">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media project-card__media--alt"></div>
+            <div class="project-card__body">
+              <span class="project-card__tag">LMS</span>
+              <h3 class="project-card__title">Nền tảng học trực tuyến</h3>
+              <p class="project-card__text">Tối ưu trải nghiệm học viên và giảng viên, giảm độ phức tạp của bảng điều khiển quản lý khóa học.</p>
+              <a href="#contact" class="project-card__link">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media project-card__media--alt2"></div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Học đường</span>
+              <h3 class="project-card__title">Website trường học</h3>
+              <p class="project-card__text">Thiết kế giao diện thông tin trường học, giúp người dùng tìm dữ liệu nhanh chóng và dễ dàng.</p>
+              <a href="#contact" class="project-card__link">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media project-card__media--alt3"></div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Sales</span>
+              <h3 class="project-card__title">Landing page bán hàng</h3>
+              <p class="project-card__text">Xây dựng trải nghiệm mua hàng đơn giản, tập trung vào chuyển đổi với điểm nhấn ảnh hưởng mạnh.</p>
+              <a href="#contact" class="project-card__link">Xem chi tiết</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section: form + thông tin liên hệ -->
+    <section class="section" id="contact">
+      <div class="section__inner contact-grid">
+        <div class="contact-panel reveal">
+          <span class="section__eyebrow">Contact</span>
+          <h2 class="section__title">Kết nối với tôi</h2>
+          <p class="section__text">Nếu bạn đang tìm kiếm một UI/UX Designer tập trung vào web bán hàng, LMS và giáo dục, hãy gửi tin nhắn để cùng trao đổi.</p>
+          <div class="contact-info">
+            <div>
+              <p class="contact-info__label">Email</p>
+              <a href="mailto:hello@example.com" class="contact-info__value">hello@example.com</a>
+            </div>
+            <div>
+              <p class="contact-info__label">Điện thoại</p>
+              <a href="tel:+84912345678" class="contact-info__value">+84 912 345 678</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" action="#" method="post">
+          <label class="form__label">
+            Họ và tên
+            <input class="form__input" type="text" name="name" placeholder="Nguyễn Văn A" required />
+          </label>
+          <label class="form__label">
+            Email
+            <input class="form__input" type="email" name="email" placeholder="email@example.com" required />
+          </label>
+          <label class="form__label">
+            Lời nhắn
+            <textarea class="form__textarea" name="message" rows="5" placeholder="Mô tả nhanh yêu cầu của bạn" required></textarea>
+          </label>
+          <button class="button button--primary button--full" type="submit">Gửi liên hệ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: bản quyền -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Hồ Minh. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
