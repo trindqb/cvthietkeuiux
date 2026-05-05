@@ -51,3 +51,6 @@ Thiết kế một trang portfolio cá nhân chuyên nghiệp cho UI/UX Designer
 Header phải có menu hoặc tab để lựa chọn.
 THông tin cá nhân:
 Thông tin liên hệ:
+
+# Trong bức hình album abcxyz
+Bức hình này là sản phẩm dự án thiết cho quỹ Bông hồng nhỏ.... 
